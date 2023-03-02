@@ -1,3 +1,5 @@
+from database import add_entry, view_entries
+
 menu = """Please select:
 1) Add new entry for today
 2) View entries
@@ -6,14 +8,12 @@ menu = """Please select:
 Your selection:"""
 
 welcome = "Welcome to the programming diary"
-
 print(welcome)
 
-user_input = input(menu)
 while (user_input := input(menu)) != '3':
     if user_input == '1':
-        print('Add')
+        add_entry()
     elif user_input == '2':
-        print('View')
+        view_entries()
     else:
         print('Invalid option')
