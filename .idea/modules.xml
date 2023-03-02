@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/postgress_tutorial.iml" filepath="$PROJECT_DIR$/.idea/postgress_tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sql_python_tutorial/.idea/sql_python_tutorial.iml" filepath="$PROJECT_DIR$/../sql_python_tutorial/.idea/sql_python_tutorial.iml" />
     </modules>
   </component>
 </project>
