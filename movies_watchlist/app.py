@@ -12,8 +12,7 @@ menu = """Please select one of the following options:
 8) Exit.
 
 Your selection: """
-welcome = "Welcome to the watchlist app!"
-print(welcome)
+print("Welcome to the watchlist app!")
 
 database.create_tables()
 
@@ -23,13 +22,11 @@ def prompt_add_movie():
     release_date = input("Release date (dd-mm-yyyy): ")
     parsed_date = datetime.datetime.strptime(release_date, "%d-%m-%Y")
     timestamp = parsed_date.timestamp()
-
     database.add_movies(title, timestamp)
 
 
 def print_movie_list(heading, movies):
     print(f'{heading} movies')
-    print(movies[0])
     for _id, title, release_date in movies:
         movie_date = datetime.datetime.fromtimestamp(release_date)
         human_date = movie_date.strftime("%d %b %Y")
